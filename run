@@ -1,0 +1,12 @@
+#! usr/bin/env php
+<?php
+
+namespace Structural\Bridge;
+
+require_once 'vendor/autoload.php';
+
+$service = new OutputBridge(new StringOutput());
+printf("%s \n", $service->doSomething('String'));
+
+$service = new OutputBridge(new IntOutput());
+printf("%s \n", $service->doSomething('112358'));
