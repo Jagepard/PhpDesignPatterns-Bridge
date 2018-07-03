@@ -1,19 +1,24 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 30.03.18
- * Time: 16:27
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Structural\Bridge;
 
-
-class OutputBridge implements OutputInterface
+/**
+ * Class OutputBridge
+ * @package Structural\Bridge
+ */
+class OutputBridge
 {
 
+    /**
+     * @var OutputInterface
+     */
     protected $output;
 
     /**
@@ -30,14 +35,6 @@ class OutputBridge implements OutputInterface
      */
     public function doSomething($input)
     {
-        return $this->getOutput()->doSomething($input);
-    }
-
-    /**
-     * @return OutputInterface
-     */
-    public function getOutput(): OutputInterface
-    {
-        return $this->output;
+        return $this->output->doSomething($input);
     }
 }
