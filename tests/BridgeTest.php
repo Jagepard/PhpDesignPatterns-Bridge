@@ -4,26 +4,22 @@ declare(strict_types=1);
 
 /**
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
-use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
+namespace Structural\Bridge\Tests;
+
+use Structural\Bridge\IntOutput;
 use Structural\Bridge\OutputBridge;
 use Structural\Bridge\StringOutput;
-use Structural\Bridge\IntOutput;
-
+use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 /**
- * Class SingletonsPoolTest
+ * Class BridgeTest
+ * @package Structural\Bridge\Tests
  */
 class BridgeTest extends PHPUnit_Framework_TestCase
 {
-
-    protected function setUp(): void
-    {
-
-    }
 
     public function testStringOutput()
     {
