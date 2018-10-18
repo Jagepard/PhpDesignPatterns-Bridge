@@ -5,5 +5,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Bridge
+# Bridge | [API](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/docs.md "Documentation API")
 Мост
