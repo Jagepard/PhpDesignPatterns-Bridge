@@ -7,3 +7,5 @@
 
 # Bridge | [API](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/docs.md "Documentation API")
 Мост
+
+![Bridge](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/UML.png)
