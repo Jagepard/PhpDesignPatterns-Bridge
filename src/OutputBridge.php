@@ -13,13 +13,12 @@ namespace Structural\Bridge;
  * Class OutputBridge
  * @package Structural\Bridge
  */
-class OutputBridge
+class OutputBridge implements OutputInterface
 {
-
     /**
      * @var OutputInterface
      */
-    protected $output;
+    private $output;
 
     /**
      * Service constructor.
@@ -35,6 +34,14 @@ class OutputBridge
      */
     public function doSomething($input)
     {
-        return $this->output->doSomething($input);
+        return $this->getOutput()->doSomething($input);
+    }
+
+    /**
+     * @return OutputInterface
+     */
+    public function getOutput(): OutputInterface
+    {
+        return $this->output;
     }
 }
