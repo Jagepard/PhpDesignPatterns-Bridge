@@ -13,15 +13,14 @@ namespace Structural\Bridge;
  * Class IntOutput
  * @package Structural\Bridge
  */
-class IntOutput implements OutputInterface
+class JsonOutput implements OutputInterface
 {
-
     /**
-     * @param string $input
+     * @param $input
      * @return string
      */
-    public function doSomething($input)
+    public function doSomething($input): string
     {
-        return (int)$input;
+        return \json_encode($input);
     }
 }
