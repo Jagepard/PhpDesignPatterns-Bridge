@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Structural\Bridge\Tests;
 
-use Structural\Bridge\IntOutput;
+use Structural\Bridge\JsonOutput;
 use Structural\Bridge\OutputBridge;
 use Structural\Bridge\StringOutput;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
@@ -20,7 +20,6 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
  */
 class BridgeTest extends PHPUnit_Framework_TestCase
 {
-
     public function testStringOutput()
     {
         $service = new OutputBridge(new StringOutput());
@@ -29,7 +28,7 @@ class BridgeTest extends PHPUnit_Framework_TestCase
 
     public function testIntOutput()
     {
-        $service = new OutputBridge(new IntOutput());
-        $this->assertEquals(112358, $service->doSomething('112358'));
+        $service = new OutputBridge(new JsonOutput());
+        $this->assertEquals('"String"', $service->doSomething('String'));
     }
 }
