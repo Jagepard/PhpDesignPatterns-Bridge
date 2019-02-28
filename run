@@ -8,5 +8,5 @@ require_once 'vendor/autoload.php';
 $service = new OutputBridge(new StringOutput());
 printf("%s \n", $service->doSomething('String'));
 
-$service = new OutputBridge(new IntOutput());
-printf("%s \n", $service->doSomething('112358'));
+$service = new OutputBridge(new JsonOutput());
+printf("%s \n", $service->doSomething('String'));

@@ -15,13 +15,12 @@ namespace Structural\Bridge;
  */
 class StringOutput implements OutputInterface
 {
-
     /**
      * @param string $input
      * @return string
      */
-    public function doSomething($input)
+    public function doSomething($input): string
     {
-        return (string)$input;
+        return $input;
     }
 }
