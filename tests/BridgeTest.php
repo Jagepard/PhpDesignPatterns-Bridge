@@ -14,10 +14,6 @@ use Structural\Bridge\OutputBridge;
 use Structural\Bridge\StringOutput;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class BridgeTest
- * @package Structural\Bridge\Tests
- */
 class BridgeTest extends PHPUnit_Framework_TestCase
 {
     public function testStringOutput()

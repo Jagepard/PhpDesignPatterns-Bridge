@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Bridge;
 
-/**
- * Class IntOutput
- * @package Structural\Bridge
- */
 class JsonOutput implements OutputInterface
 {
     /**
