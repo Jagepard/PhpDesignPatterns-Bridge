@@ -7,10 +7,6 @@
 
 namespace Structural\Bridge;
 
-/**
- * Interface OutputInterface
- * @package Structural\Bridge
- */
 interface OutputInterface
 {
     /**

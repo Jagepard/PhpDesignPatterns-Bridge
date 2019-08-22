@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Bridge;
 
-/**
- * Class OutputBridge
- * @package Structural\Bridge
- */
 class OutputBridge implements OutputInterface
 {
     /**
