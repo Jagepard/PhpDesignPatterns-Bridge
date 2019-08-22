@@ -6,6 +6,8 @@
 -----
 
 # Bridge | [API](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
+
 Мост
 
 ![Bridge](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/UML.png)
