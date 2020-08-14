@@ -6,8 +6,11 @@
 -----
 
 # Bridge | [API](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/docs.md "Documentation API")
-```php run``` Запустить исполнение шаблона в терминале
+```php main.php``` execute in terminal
 
-Мост
-
-![Bridge](https://github.com/Jagepard/PhpDesignPatterns-Bridge/blob/master/UML.png)
+## Result:
+```
+Input data: String 
+Bridge for Uppercase: STRING 
+Bridge for Lowercase: string 
+```
