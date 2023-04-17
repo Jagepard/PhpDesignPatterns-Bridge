@@ -11,6 +11,14 @@ namespace Structural\Bridge;
 
 class Uppercase implements BridgeInterface
 {
+    /**
+     * Performs some action
+     * --------------------
+     * Выполняет какое-то действие
+     *
+     * @param  string $input
+     * @return string
+     */
     public function doSomething(string $input): string
     {
         return strtoupper($input);
