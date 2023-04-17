@@ -9,5 +9,9 @@ namespace Structural\Bridge;
 
 interface BridgeInterface
 {
+    /**
+     * @param  string $input
+     * @return void
+     */
     public function doSomething(string $input);
 }
